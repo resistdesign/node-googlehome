@@ -1,14 +1,21 @@
 {
-  "name": "node-googlehome",
-  "version": "0.0.7",
+  "name": "@resistdesign/node-googlehome",
+  "version": "0.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha --ui exports ./lib/**/*.spec.js"
+  },
   "repository": "https://github.com/Ghostrick/node-googlehome",
   "author": "_Ghostrick_ <ghostrick.kinako@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bonjour": "^3.5.0",
     "castv2-client": "^1.2.0",
     "google-tts-api": "^0.0.4",
-    "mdns": "^2.4.0",
     "mime-types": "^2.1.21"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^6.1.4"
   }
 }
